@@ -1,10 +1,9 @@
-version: "3.12"
 services:
     web:
         build: .
         restart: always
         container_name: optum
         ports:
-            - "8050:8050"	
+            - "8050:8050"
         expose:
             - "8050"

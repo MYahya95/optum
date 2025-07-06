@@ -16,7 +16,7 @@ def main():
             file=file_name.removesuffix(".json")
 
             # Read in FHIR json files
-            if file_name.endswith('c6.json'): # Adjust ending to specify specific files
+            if file_name.endswith('c6.json'): # Adjust ending to specify files
                 with open('data/'+file_name) as f:
                     fhir_data = json.load(f)
             
